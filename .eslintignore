@@ -1,0 +1,10 @@
+.next/*
+
+node_modules/*
+
+build/*
+public/*
+
+next-env.d.ts
+
+*.js
