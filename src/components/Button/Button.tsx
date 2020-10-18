@@ -1,22 +1,9 @@
 import React from 'react'
 
-import styled from 'styled-components'
+import * as S from './Button.styles'
 
-type Props = {
-  text: string
+export const Button: React.FC = props => {
+  const {children} = props
+
+  return <S.Container>{children}</S.Container>
 }
-
-const ButtonStyled = styled.button`
-  padding: 15px;
-
-  background: ${p => p.theme.colors.primary};
-
-  color: ${p => p.theme.colors.text};
-  font-size: 20px;
-`
-
-export const Button: React.FC<Props> = ({text}) => (
-  <ButtonStyled>{text}</ButtonStyled>
-)
-
-export default Button
