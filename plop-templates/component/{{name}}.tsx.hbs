@@ -2,6 +2,10 @@ import React from 'react'
 
 import * as S from './{{name}}.styles'
 
-export const {{name}}: React.FC = () => (
-  <S.Container>Hello {{name}}!!!1</S.Container>
-)
+interface {{name}}Props {}
+
+export const {{name}}: React.FC<{{name}}Props> = props => {
+  const {children} = props
+
+  return <S.Container>{children}</S.Container>
+}

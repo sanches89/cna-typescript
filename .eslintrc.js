@@ -27,7 +27,6 @@ module.exports = {
     'prettier',
   ],
   rules: {
-    'react/prop-types': 'off',
     'import-helpers/order-imports': [
       'warn',
       {
@@ -43,5 +42,7 @@ module.exports = {
         alphabetize: {order: 'asc', ignoreCase: true},
       },
     ],
+    'react/prop-types': 'off',
+    '@typescript-eslint/no-empty-interface': 'off'
   },
 }
