@@ -33,6 +33,7 @@ module.exports = {
         newlinesBetween: 'always',
         groups: [
           ['/^react$/', '/^react-dom$/'],
+          '/^@\/utils\/test-utils$/',
           '/^next/',
           '/^styled-components/',
           'module',
