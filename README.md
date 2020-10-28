@@ -1,3 +1,15 @@
+# Create Next App - Typescript, Jest and Storybook
+
+## Features
+
+## TODO
+
+- [] Track this [Storybook issues](https://github.com/storybookjs/storybook/issues/12408) and change the `@storybook/react` and `react-color` to the correct version on it's ready
+- [] Test the new [Image Component](https://nextjs.org/docs/basic-features/image-optimization) from Next.js 10+
+
+
+---
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
