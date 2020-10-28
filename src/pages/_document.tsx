@@ -42,9 +42,7 @@ export default class MyDocument extends Document {
   render(): JSX.Element {
     return (
       <Html lang="en">
-        <Head>
-          <meta charSet="utf-8" />
-        </Head>
+        <Head />
         <body>
           <Main />
           <NextScript />
