@@ -16,7 +16,7 @@
     "normalize.css": "^8.0.1",
     "react": "17.0.1",
     "react-dom": "17.0.1",
-    "styled-components": "^5.2.0"
+    "styled-components": "^5.2.1"
   },
   "devDependencies": {
     "@babel/core": "^7.12.3",
@@ -27,14 +27,14 @@
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "@types/jest": "^26.0.15",
-    "@types/node": "^14.14.5",
-    "@types/react": "^16.9.54",
+    "@types/node": "^14.14.6",
+    "@types/react": "^16.9.55",
     "@types/styled-components": "^5.1.4",
     "@typescript-eslint/eslint-plugin": "^4.6.0",
     "@typescript-eslint/parser": "^4.6.0",
     "babel-jest": "^26.6.1",
     "babel-loader": "^8.1.0",
-    "babel-plugin-inline-react-svg": "^1.1.1",
+    "babel-plugin-inline-react-svg": "^1.1.2",
     "babel-plugin-styled-components": "^1.11.1",
     "babel-preset-react-app": "^10.0.0",
     "eslint": "^7.12.1",
