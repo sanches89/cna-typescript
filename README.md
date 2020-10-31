@@ -5,7 +5,7 @@
 ## TODO
 
 - [ ] Track this [Storybook issues](https://github.com/storybookjs/storybook/issues/12408) and change the `@storybook/react` and `react-color` to the correct version on it's ready
-- [ ] Test the new [Image Component](https://nextjs.org/docs/basic-features/image-optimization) from Next.js 10+
+- [x] Test the new [Image Component](https://nextjs.org/docs/basic-features/image-optimization) from Next.js 10+
 
 
 ---

@@ -7,6 +7,9 @@ import {ThemeProvider} from 'styled-components'
 
 import {theme} from '@/styles/theme'
 
+import 'normalize.css/normalize.css'
+import 'modern-css-reset/dist/reset.css'
+
 const viewport = [
   'minimum-scale=1',
   'initial-scale=1',
@@ -16,7 +19,7 @@ const viewport = [
   'viewport-fit=cover',
 ].join(', ')
 
-const MyApp: React.FC<AppProps> = ({Component, pageProps}) => {
+function MyApp({Component, pageProps}: AppProps): JSX.Element {
   return (
     <>
       <Head>

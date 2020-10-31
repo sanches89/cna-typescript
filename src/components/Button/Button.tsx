@@ -2,9 +2,11 @@ import React from 'react'
 
 import * as S from './Button.styles'
 
-interface ButtonProps {}
+interface ButtonProps {
+  children: React.ReactNode
+}
 
-export const Button: React.FC<ButtonProps> = props => {
+export function Button(props: ButtonProps): JSX.Element {
   const {children} = props
 
   return <S.Container>{children}</S.Container>

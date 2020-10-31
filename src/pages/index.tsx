@@ -1,7 +1,3 @@
-import React from 'react'
-
-export const Home: React.FC = () => {
-  return <h1>Welcome to Next.js!</h1>
-}
+import {Home} from '@/features/Home'
 
 export default Home

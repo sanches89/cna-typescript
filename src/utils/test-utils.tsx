@@ -6,14 +6,20 @@ import {render, RenderOptions, RenderResult} from '@testing-library/react'
 
 import {theme} from '@/styles/theme'
 
-const AllTheProviders = ({children}) => {
+interface AllTheProvidersProps {
+  children: React.ReactNode
+}
+
+function AllTheProviders({children}: AllTheProvidersProps): JSX.Element {
   return <ThemeProvider theme={theme}>{children}</ThemeProvider>
 }
 
-const customRender = (
+function customRender(
   ui: React.ReactElement,
   options: Omit<RenderOptions, 'queries'> = {},
-): RenderResult => render(ui, {wrapper: AllTheProviders, ...options})
+): RenderResult {
+  return render(ui, {wrapper: AllTheProviders, ...options})
+}
 
 // re-export everything
 export * from '@testing-library/react'
