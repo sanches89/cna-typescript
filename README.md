@@ -2,7 +2,27 @@
 
 ## Features
 
+### Main
+
+- `react`
+- `typescript`
+- `jest`
+- `@storybook/react`
 - `styled-components`
+
+### Generate code
+
+- `plop`
+
+### Lint
+
+- `eslint`
+- `eslint-plugin-import-helpers`
+- `stylelint`
+
+### Formatting
+
+- `prettier`
 
 ### CSS packages
 
