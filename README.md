@@ -5,6 +5,7 @@
 ### Main
 
 - `react`
+- `next`
 - `typescript`
 - `jest`
 - `@storybook/react`
