@@ -7,7 +7,9 @@ import {ThemeProvider} from 'styled-components'
 
 import {theme} from '@/styles/theme'
 
-import 'normalize.css/normalize.css'
+/**
+ * @see https://dev.to/hankchizljaw/a-modern-css-reset-6p3
+ */
 import 'modern-css-reset/dist/reset.css'
 
 const viewport = [

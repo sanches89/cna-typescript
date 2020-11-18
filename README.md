@@ -27,7 +27,6 @@
 
 ### CSS packages
 
-- `normalize.css`
 - `modern-css-reset`
 
 ## TODO
