@@ -26,6 +26,11 @@ module.exports = {
     'eslint-plugin-import-helpers',
     'prettier',
   ],
+  settings: {
+    react: {
+      version: 'detect',
+    },
+  },
   rules: {
     'import-helpers/order-imports': [
       'warn',
