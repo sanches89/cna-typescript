@@ -50,4 +50,22 @@ export default function (plop: NodePlopAPI): void {
       },
     ],
   })
+  plop.setGenerator('hook', {
+    description: 'React hook',
+    prompts: [
+      {
+        type: 'input',
+        name: 'name',
+        message: 'What is the custom hook name?',
+      },
+    ],
+    actions: [
+      {
+        type: 'addMany',
+        destination: './src/hooks/{{name}}',
+        base: './plop-templates/hook',
+        templateFiles: './plop-templates/hook/*.hbs',
+      },
+    ],
+  })
 }

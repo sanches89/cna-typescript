@@ -1,0 +1,33 @@
+import React from 'react'
+
+import {act, render} from '@/utils/test-utils'
+
+import { {{~name~}} } from './{{name}}'
+
+// prettier-ignore
+type ArgumentTypes<F extends (...args: unknown[]) => unknown> =
+  F extends (...args: infer A) => unknown ? A : never
+
+function setup(...args: ArgumentTypes<typeof {{name}}>) {
+  const returnVal = {}
+
+  function TestComponent() {
+    Object.assign(returnVal, {{name}}(...args))
+
+    return null
+  }
+
+  render(<TestComponent />)
+
+  return returnVal
+}
+
+describe('{{name}}', () => {
+  it('call {{name}} without break', () => {
+    const hookResult = setup(/* args */)
+    act(() => {
+      // do something with `hookResult`
+    })
+    expect(0).toBe(0)
+  })
+})
