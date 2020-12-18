@@ -6,7 +6,7 @@ interface ButtonProps {
   children: React.ReactNode
 }
 
-export function Button(props: ButtonProps): JSX.Element {
+export function Button(props: ButtonProps): React.ReactElement {
   const {children} = props
 
   return <S.Container>{children}</S.Container>

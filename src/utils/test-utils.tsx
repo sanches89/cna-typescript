@@ -10,7 +10,7 @@ interface AllTheProvidersProps {
   children: React.ReactNode
 }
 
-function AllTheProviders({children}: AllTheProvidersProps): JSX.Element {
+function AllTheProviders({children}: AllTheProvidersProps): React.ReactElement {
   return <ThemeProvider theme={theme}>{children}</ThemeProvider>
 }
 

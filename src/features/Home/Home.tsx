@@ -2,7 +2,7 @@ import React from 'react'
 
 import * as S from './Home.styles'
 
-export function Home(): JSX.Element {
+export function Home(): React.ReactElement {
   return (
     <S.Container>
       <S.Title>Welcome to Next.js 10!</S.Title>

@@ -21,7 +21,7 @@ const viewport = [
   'viewport-fit=cover',
 ].join(', ')
 
-function MyApp({Component, pageProps}: AppProps): JSX.Element {
+function MyApp({Component, pageProps}: AppProps): React.ReactElement {
   return (
     <>
       <Head>
