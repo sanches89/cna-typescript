@@ -19,6 +19,8 @@
 
 - `eslint`
 - `eslint-plugin-import-helpers`
+- `eslint-plugin-jest-dom`
+- `eslint-plugin-testing-library`
 - `stylelint`
 
 ### Formatting
