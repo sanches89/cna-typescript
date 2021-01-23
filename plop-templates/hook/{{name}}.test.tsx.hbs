@@ -5,10 +5,10 @@ import {act, render} from '@/utils/test-utils'
 import { {{~name~}} } from './{{name}}'
 
 // prettier-ignore
-type ArgumentTypes<F extends (...args: unknown[]) => unknown> =
+type Arguments<F extends (...args: unknown[]) => unknown> =
   F extends (...args: infer A) => unknown ? A : never
 
-function setup(...args: ArgumentTypes<typeof {{name}}>) {
+function setup(...args: Arguments<typeof {{name}}>) {
   const returnVal = {}
 
   function TestComponent() {
