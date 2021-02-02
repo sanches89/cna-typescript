@@ -33,7 +33,7 @@
 
 ## TODO
 
-- [ ] Add PWA config
+- [x] Add PWA config
       [ref](https://github.com/vercel/next.js/tree/canary/examples/progressive-web-app)
 - [ ] Add Apollo config in a different branch
       [ref](https://github.com/vercel/next.js/tree/canary/examples/api-routes-apollo-server-and-client-auth)
