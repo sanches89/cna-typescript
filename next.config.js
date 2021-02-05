@@ -2,10 +2,15 @@ const withPWA = require('next-pwa')
 const runtimeCaching = require('next-pwa/cache')
 
 module.exports = withPWA({
+  // https://nextjs.org/docs/api-reference/next.config.js/react-strict-mode
+  reactStrictMode: true,
+
+  // next/pwa default config
   pwa: {
     dest: 'public',
     runtimeCaching,
   },
+
   // default config of next/image
   images: {
     deviceSizes: [320, 420, 768, 1024, 1200],
