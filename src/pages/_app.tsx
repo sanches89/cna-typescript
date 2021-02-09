@@ -28,10 +28,32 @@ function MyApp({Component, pageProps}: AppProps): React.ReactElement {
         <meta charSet="utf-8" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
 
-        <meta name="description" content="" />
         <meta name="viewport" content={viewport} />
 
-        <link rel="shortcut icon" href="/favicon.ico" />
+        <meta name="description" content="Create Next App - TypeScript" />
+        <meta
+          name="keywords"
+          content="Next.js, Create Next App, CNA, TypeScript, TS"
+        />
+
+        <meta name="theme-color" content="#f9f9f9" />
+
+        <link rel="manifest" href="/manifest.json" />
+
+        <link
+          href="/icons/icon-16x16.png"
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+        />
+        <link
+          href="/icons/icon-32x32.png"
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+        />
+
+        <link rel="apple-touch-icon" href="/icons/icon-512x512.png"></link>
 
         <title>CNA | TypeScript</title>
       </Head>
