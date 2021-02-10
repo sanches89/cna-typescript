@@ -34,6 +34,7 @@
 ## TODO
 
 - [ ] Add GitHub Actions with Cypress
+- [ ] Add `react-intl`
 - [x] Add PWA config
       [ref](https://github.com/vercel/next.js/tree/canary/examples/progressive-web-app)
 - [ ] Add Apollo config in a different branch
