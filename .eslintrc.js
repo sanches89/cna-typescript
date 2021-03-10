@@ -9,10 +9,10 @@ module.exports = {
     'eslint:recommended',
     'plugin:react/recommended',
     'plugin:@typescript-eslint/recommended',
-    'prettier/@typescript-eslint',
     'plugin:prettier/recommended',
     'plugin:jest-dom/recommended',
-    'plugin:testing-library/recommended'
+    'plugin:testing-library/recommended',
+    'plugin:cypress/recommended',
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
@@ -27,6 +27,7 @@ module.exports = {
     '@typescript-eslint',
     'eslint-plugin-import-helpers',
     'prettier',
+    'cypress',
   ],
   settings: {
     react: {
