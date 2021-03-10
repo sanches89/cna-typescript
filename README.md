@@ -8,6 +8,7 @@
 - `next`
 - `typescript`
 - `jest`
+- `cypress`
 - `@storybook/react`
 - `styled-components`
 
