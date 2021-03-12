@@ -6,11 +6,7 @@ import {render, RenderOptions, RenderResult} from '@testing-library/react'
 
 import {theme} from '@/styles/theme'
 
-interface AllTheProvidersProps {
-  children: React.ReactNode
-}
-
-function AllTheProviders({children}: AllTheProvidersProps): React.ReactElement {
+const AllTheProviders: React.FC = ({children}) => {
   return <ThemeProvider theme={theme}>{children}</ThemeProvider>
 }
 
