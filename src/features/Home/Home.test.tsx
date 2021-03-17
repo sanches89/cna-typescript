@@ -8,7 +8,7 @@ describe('Home', () => {
   it('renders without crashing', () => {
     render(<Home />)
     expect(
-      screen.getByRole('heading', {name: 'Welcome to Next.js 10!'}),
+      screen.getByRole('heading', {name: 'Welcome to CNA - TypeScript!'}),
     ).toBeInTheDocument()
   })
 })
