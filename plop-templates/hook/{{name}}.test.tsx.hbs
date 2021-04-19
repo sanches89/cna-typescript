@@ -25,9 +25,11 @@ function setup(...args: Arguments<typeof {{name}}>) {
 describe('{{name}}', () => {
   it('call {{name}} without break', () => {
     const hookResult = setup(/* args */)
+
     act(() => {
       // do something with `hookResult`
     })
-    expect(0).toBe(0)
+
+    expect(true).toBeTruthy()
   })
 })
