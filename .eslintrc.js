@@ -11,6 +11,7 @@ module.exports = {
     'plugin:@typescript-eslint/recommended',
     'plugin:prettier/recommended',
     'plugin:jest-dom/recommended',
+    'plugin:jest-playwright/recommended',
   ],
   "overrides": [
     {
