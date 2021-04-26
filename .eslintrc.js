@@ -11,7 +11,6 @@ module.exports = {
     'plugin:@typescript-eslint/recommended',
     'plugin:prettier/recommended',
     'plugin:jest-dom/recommended',
-    'plugin:cypress/recommended',
   ],
   "overrides": [
     {
@@ -33,7 +32,6 @@ module.exports = {
     'testing-library',
     'eslint-plugin-import-helpers',
     'prettier',
-    'cypress',
   ],
   settings: {
     react: {

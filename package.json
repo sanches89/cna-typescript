@@ -45,10 +45,8 @@
     "babel-plugin-inline-react-svg": "2.0.1",
     "babel-plugin-styled-components": "1.12.0",
     "babel-preset-react-app": "10.0.0",
-    "cypress": "7.1.0",
     "eslint": "7.25.0",
     "eslint-config-prettier": "8.3.0",
-    "eslint-plugin-cypress": "2.11.2",
     "eslint-plugin-import-helpers": "1.1.0",
     "eslint-plugin-jest-dom": "3.8.1",
     "eslint-plugin-prettier": "3.4.0",
@@ -72,10 +70,6 @@
   },
   "lint-staged": {
     "./src/*.{ts,tsx}": [
-      "prettier --write",
-      "eslint --fix-dry-run"
-    ],
-    "./cypress/integration/*.{ts,tsx}": [
       "prettier --write",
       "eslint --fix-dry-run"
     ]

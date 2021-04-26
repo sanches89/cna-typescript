@@ -7,5 +7,4 @@ module.exports = {
   setupFilesAfterEnv: ['<rootDir>/setupTests.js'],
   moduleNameMapper: pathsToModuleNameMapper(compilerOptions.paths, {prefix: '<rootDir>/'}),
   transform: {'.(js|jsx|ts|tsx)': 'babel-jest'},
-  testPathIgnorePatterns: ['cypress']
 };
