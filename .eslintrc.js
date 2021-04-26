@@ -11,8 +11,13 @@ module.exports = {
     'plugin:@typescript-eslint/recommended',
     'plugin:prettier/recommended',
     'plugin:jest-dom/recommended',
-    'plugin:testing-library/recommended',
     'plugin:cypress/recommended',
+  ],
+  "overrides": [
+    {
+      "files": ["**/?(*.)+(spec|test).[jt]s?(x)"],
+      "extends": ["plugin:testing-library/react"]
+    },
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
@@ -25,6 +30,7 @@ module.exports = {
   plugins: [
     'react',
     '@typescript-eslint',
+    'testing-library',
     'eslint-plugin-import-helpers',
     'prettier',
     'cypress',
