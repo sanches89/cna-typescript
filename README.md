@@ -35,6 +35,7 @@
 ## TODO
 
 - [x] Add Cypress
+- [ ] Test [Playwright](https://playwright.dev/)
 - [ ] Add GitHub Actions
 - [ ] Add `react-intl`
 - [ ] Add Apollo config in a different branch
