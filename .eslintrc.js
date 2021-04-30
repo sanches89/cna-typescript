@@ -9,14 +9,18 @@ module.exports = {
     'eslint:recommended',
     'plugin:react/recommended',
     'plugin:@typescript-eslint/recommended',
-    'plugin:prettier/recommended',
+    'plugin:jest/recommended',
     'plugin:jest-dom/recommended',
-    'plugin:jest-playwright/recommended',
+    'plugin:prettier/recommended',
   ],
-  "overrides": [
+  'overrides': [
     {
-      "files": ["**/?(*.)+(spec|test).[jt]s?(x)"],
-      "extends": ["plugin:testing-library/react"]
+      'files': ['**/?(*.)+(spec|test).[jt]s?(x)'],
+      'extends': ['plugin:testing-library/react'],
+    },
+    {
+      'files': ['**/__e2e__/**/*.[jt]s?(x)'],
+      'extends': ['plugin:jest-playwright/recommended'],
     },
   ],
   parser: '@typescript-eslint/parser',
@@ -32,6 +36,8 @@ module.exports = {
     '@typescript-eslint',
     'testing-library',
     'eslint-plugin-import-helpers',
+    'jest',
+    'jest-playwright',
     'prettier',
   ],
   settings: {
