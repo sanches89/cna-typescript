@@ -3,6 +3,11 @@ const path = require('path')
 
 module.exports = {
   stories: ['../src/**/*.stories.@(ts|tsx|mdx)'],
+  addons: [
+    '@storybook/addon-essentials',
+    '@storybook/addon-storysource',
+    '@storybook/addon-a11y',
+  ],
   typescript: {
     check: false,
     checkOptions: {},
@@ -19,10 +24,13 @@ module.exports = {
       .filter(
         f => fs.statSync(path.join(__dirname, `../src/${f}`)).isDirectory()
       )
-      .reduce((acc, dir) => {
-        acc[`@/${dir}`] = path.resolve(__dirname, `../src/${dir}`)
-        return acc
-      }, {})
+      .reduce(
+        (acc, dir) => {
+          acc[`@/${dir}`] = path.resolve(__dirname, `../src/${dir}`)
+          return acc
+        },
+        {}
+      )
 
     config.resolve.alias = {
       ...config.resolve.alias,
