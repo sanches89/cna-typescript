@@ -88,7 +88,7 @@ export default function (plop: NodePlopAPI): void {
         type: 'list',
         name: 'browser',
         message: 'What is the browser?',
-        choices: ['chromium', 'firefox', 'webkit'],
+        choices: ['chromium', 'firefox', 'webkit (only for macOS)'],
         default: 'chromium',
       },
     ],
