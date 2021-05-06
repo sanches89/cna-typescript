@@ -19,7 +19,7 @@
     "next": "10.2.0",
     "react": "17.0.2",
     "react-dom": "17.0.2",
-    "styled-components": "5.2.3"
+    "styled-components": "5.3.0"
   },
   "devDependencies": {
     "@babel/core": "7.14.0",
@@ -33,11 +33,11 @@
     "@testing-library/react": "11.2.6",
     "@testing-library/user-event": "13.1.8",
     "@types/jest": "26.0.23",
-    "@types/node": "15.0.1",
-    "@types/react": "17.0.4",
+    "@types/node": "15.0.2",
+    "@types/react": "17.0.5",
     "@types/styled-components": "5.1.9",
-    "@typescript-eslint/eslint-plugin": "4.22.0",
-    "@typescript-eslint/parser": "4.22.0",
+    "@typescript-eslint/eslint-plugin": "4.22.1",
+    "@typescript-eslint/parser": "4.22.1",
     "babel-jest": "26.6.3",
     "babel-loader": "8.2.2",
     "babel-plugin-inline-react-svg": "2.0.1",
@@ -51,7 +51,7 @@
     "eslint-plugin-jest-playwright": "0.3.1",
     "eslint-plugin-prettier": "3.4.0",
     "eslint-plugin-react": "7.23.2",
-    "eslint-plugin-testing-library": "4.1.2",
+    "eslint-plugin-testing-library": "4.2.0",
     "expect-playwright": "0.3.4",
     "husky": "6.0.0",
     "jest": "26.6.3",
@@ -61,9 +61,9 @@
     "plop": "2.7.4",
     "prettier": "2.2.1",
     "start-server-and-test": "1.12.1",
-    "stylelint": "13.13.0",
+    "stylelint": "13.13.1",
     "stylelint-config-standard": "22.0.0",
-    "ts-jest": "26.5.5",
+    "ts-jest": "26.5.6",
     "typescript": "4.2.4"
   },
   "husky": {
