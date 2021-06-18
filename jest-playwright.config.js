@@ -1,3 +1,13 @@
+const os = require('os')
+
+const isMac = os.platform === 'darwin'
+
+const browsers = ['chromium', 'firefox']
+
+if (isMac) {
+  browsers.push('webkit')
+}
+
 module.exports = {
   launchOptions: {
     headless: true,
@@ -9,7 +19,7 @@ module.exports = {
       height: 1080,
     },
   },
-  browsers: ["chromium", "firefox"],
+  browsers,
   devices: [],
   serverOptions: {
     command: 'npm run dev',

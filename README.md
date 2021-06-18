@@ -1,4 +1,4 @@
-# Create Next App - Typescript, Jest and Storybook
+# Create Next App - Typescript, Jest and Docz
 
 ## Features
 
@@ -9,7 +9,6 @@
 - `typescript`
 - `jest`
 - `playwright`
-- `@storybook/react`
 - `styled-components`
 
 ### Generate code
