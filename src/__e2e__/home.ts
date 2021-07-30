@@ -1,11 +1,11 @@
-import {chromium, ChromiumBrowser, Page} from 'playwright'
+import {firefox, FirefoxBrowser, Page} from 'playwright'
 
 describe('Home', () => {
-  let browser: ChromiumBrowser
+  let browser: FirefoxBrowser
   let page: Page
 
   beforeAll(async () => {
-    browser = await chromium.launch()
+    browser = await firefox.launch()
   })
   afterAll(async () => {
     await browser.close()

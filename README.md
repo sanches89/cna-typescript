@@ -33,7 +33,7 @@
 
 ## TODO
 
-- [x] Test [Playwright](https://playwright.dev/)
+- [x] e2e [Playwright](https://playwright.dev/)
 - [ ] Add GitHub Actions
 - [ ] Add `react-intl`
 - [ ] Add Apollo config in a different branch

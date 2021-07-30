@@ -2,7 +2,7 @@ import React from 'react'
 
 import * as S from './Button.styles'
 
-interface ButtonProps {
+export interface ButtonProps {
   children: React.ReactNode
 }
 
