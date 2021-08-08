@@ -2,7 +2,7 @@ import {NodePlopAPI} from 'plop'
 
 export default function (plop: NodePlopAPI): void {
   plop.setHelper(
-    'upperCase',
+    'firstLetterUpperCase',
     (txt: string) => txt.charAt(0).toUpperCase() + txt.slice(1),
   )
 

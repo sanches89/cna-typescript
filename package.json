@@ -11,7 +11,7 @@
     "lint": "npm run lint:tsc && npm run lint:eslint",
     "lint:tsc": "tsc --noEmit",
     "lint:eslint": "eslint --fix \"./src/**/*.{ts,tsx}\"",
-    "plop": "plop"
+    "plop": "cross-env TS_NODE_PROJECT='./ts-node.tsconfig.json' plop"
   },
   "dependencies": {
     "modern-css-reset": "1.4.0",
@@ -21,23 +21,24 @@
     "styled-components": "5.3.0"
   },
   "devDependencies": {
-    "@babel/core": "7.14.8",
+    "@babel/core": "7.15.0",
     "@testing-library/dom": "8.1.0",
     "@testing-library/jest-dom": "5.14.1",
     "@testing-library/react": "12.0.0",
     "@testing-library/user-event": "13.2.1",
     "@types/jest": "26.0.24",
-    "@types/node": "16.4.7",
-    "@types/react": "17.0.15",
-    "@types/styled-components": "5.1.11",
-    "@typescript-eslint/eslint-plugin": "4.28.5",
-    "@typescript-eslint/parser": "4.28.5",
+    "@types/node": "16.4.13",
+    "@types/react": "17.0.16",
+    "@types/styled-components": "5.1.12",
+    "@typescript-eslint/eslint-plugin": "4.29.0",
+    "@typescript-eslint/parser": "4.29.0",
     "babel-jest": "27.0.6",
     "babel-loader": "8.2.2",
     "babel-plugin-inline-react-svg": "2.0.1",
     "babel-plugin-styled-components": "1.13.2",
     "babel-preset-react-app": "10.0.0",
-    "eslint": "7.31.0",
+    "cross-env": "^7.0.3",
+    "eslint": "7.32.0",
     "eslint-config-prettier": "8.3.0",
     "eslint-plugin-import-helpers": "1.1.0",
     "eslint-plugin-jest": "24.4.0",
@@ -50,7 +51,7 @@
     "husky": "7.0.1",
     "jest": "27.0.6",
     "jest-playwright-preset": "1.7.0",
-    "lint-staged": "11.1.1",
+    "lint-staged": "11.1.2",
     "playwright": "1.13.1",
     "plop": "2.7.4",
     "prettier": "2.3.2",
@@ -58,6 +59,7 @@
     "stylelint": "13.13.1",
     "stylelint-config-standard": "22.0.0",
     "ts-jest": "27.0.4",
+    "ts-node": "^10.1.0",
     "typescript": "4.3.5"
   },
   "husky": {
