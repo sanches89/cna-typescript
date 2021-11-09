@@ -11,7 +11,9 @@
     "lint": "npm run lint:tsc && npm run lint:eslint",
     "lint:tsc": "tsc --noEmit",
     "lint:eslint": "eslint --fix \"./src/**/*.{ts,tsx}\"",
-    "plop": "cross-env TS_NODE_PROJECT='./ts-node.tsconfig.json' plop"
+    "plop": "cross-env TS_NODE_PROJECT='./ts-node.tsconfig.json' plop",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "dependencies": {
     "modern-css-reset": "1.4.0",
@@ -22,6 +24,10 @@
   },
   "devDependencies": {
     "@babel/core": "7.16.0",
+    "@storybook/addon-actions": "^6.3.12",
+    "@storybook/addon-essentials": "^6.3.12",
+    "@storybook/addon-links": "^6.3.12",
+    "@storybook/react": "^6.3.12",
     "@testing-library/dom": "8.11.0",
     "@testing-library/jest-dom": "5.15.0",
     "@testing-library/react": "12.1.2",

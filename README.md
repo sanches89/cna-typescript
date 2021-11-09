@@ -10,6 +10,7 @@
 - `jest`
 - `playwright`
 - `styled-components`
+- `storybook`
 
 ### Generate code
 
