@@ -1,3 +1,5 @@
+import fs from 'fs'
+import path from 'path'
 import {NodePlopAPI} from 'plop'
 
 export default function (plop: NodePlopAPI): void {
@@ -76,6 +78,30 @@ export default function (plop: NodePlopAPI): void {
     ],
   })
 
+  plop.setGenerator('page', {
+    description: 'Page',
+    prompts: [
+      {
+        type: 'input',
+        name: 'pathname',
+        message: 'What is the pathname?',
+      },
+      {
+        type: 'list',
+        name: 'featureName',
+        message: 'What is the Feature Name?',
+        choices: fs.readdirSync(path.resolve(__dirname, 'src', 'features')),
+      },
+    ],
+    actions: [
+      {
+        type: 'add',
+        path: './src/pages/{{pathname}}.ts',
+        templateFile: './plop-templates/page.hbs',
+      },
+    ],
+  })
+
   plop.setGenerator('e2e', {
     description: 'E2E',
     prompts: [
@@ -88,7 +114,7 @@ export default function (plop: NodePlopAPI): void {
         type: 'list',
         name: 'browser',
         message: 'What is the browser?',
-        choices: ['chromium', 'firefox', 'webkit (only for macOS)'],
+        choices: ['chromium', 'firefox', 'webkit'],
         default: 'chromium',
       },
     ],
