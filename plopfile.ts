@@ -102,6 +102,24 @@ export default function (plop: NodePlopAPI): void {
     ],
   })
 
+  plop.setGenerator('api', {
+    description: 'API',
+    prompts: [
+      {
+        type: 'input',
+        name: 'pathname',
+        message: 'What is the API pathname?',
+      },
+    ],
+    actions: [
+      {
+        type: 'add',
+        path: './src/pages/api/{{pathname}}.ts',
+        templateFile: './plop-templates/api.hbs',
+      },
+    ],
+  })
+
   plop.setGenerator('e2e', {
     description: 'E2E',
     prompts: [
