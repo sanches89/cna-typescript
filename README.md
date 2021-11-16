@@ -1,4 +1,4 @@
-# Create Next App - Typescript, Jest and Docz
+# Create Next App - Typescript, Jest and Storybook
 
 ## Features
 
